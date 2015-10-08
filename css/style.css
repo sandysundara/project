@@ -1,0 +1,113 @@
+div {
+  width: 200px;
+}
+
+
+
+
+#search{
+    position:absolute;
+    left: 88%;
+   
+}
+
+#searchMain{
+    position: absolute;
+    top: 10rem;
+    left: 29rem;
+    width: 36rem;
+    height: 3rem;
+    font-size: 2.5rem;
+}	
+   
+#searchMainLabel{
+    position: absolute;
+    top: 7rem;
+    left: 29rem;
+    width: 36rem;
+    height: 3rem;
+    font-size: 2.5rem;
+}
+
+ 
+body{
+background-color:#66CCFF
+} 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2%;
+}
+
+ul img{
+position: relative;
+    float: right;
+    height: 1.4em;
+    top: -1rem
+
+}
+ 
+li:nth-child(odd) {
+  
+  border-bottom: 10px solid #eee
+  font-size: 12px;
+  padding-bottom:5px;	
+  background-color: #F5FAFF;	
+}
+
+li:nth-child(even) {
+  
+  border-bottom: 10px solid #eee
+  font-size: 12px;
+  padding-bottom:5px;	
+  background-color: #E0E4E8;	
+}
+
+
+li a {
+  text-decoration: none;
+  color: #000;
+  
+  width: 50%;
+  font-size: 20px	
+}
+ 
+li a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}
+
+#modal {
+   
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 600px;
+    line-height: 17px;
+    height: 400px;
+    margin-left: -150px;
+    margin-top: -100px;
+    background-color: #00CCFF;
+    text-align: center;
+  
+   
+    z-index: 10; /* keep on top of other elements on the page */
+    outline: 9999px solid rgba(0,0,0,0.5);
+}
+
+.modalImage{
+    width: 5rem;
+    left: -16rem;
+    position: relative;	
+	
+}
+.modalClose{
+	        position: absolute;
+    float: right;
+    left: 35rem;
+    height: 1.5rem;
+}
+
+.modalcover{
+	width:55%;
+}
