@@ -90,12 +90,11 @@ function renderList(oData){
 		imgSrc="resources/EmptyStar.png";
 		state=0;
 	}
-		HTML =HTML+"<li onclick=\"HandleClickOfListItem(this)\" sId="+oData[i].id+" \"><a href=\"#\">"+oData[i].name+"</a><br>"+oData[i].category+"<br>"+oData[i].about+"<img class=\"favIcon\" state="+state+" src="+imgSrc+"></img></li>"
+		HTML =HTML+"<li onclick=\"HandleClickOfListItem(this)\" sId="+oData[i].id+" \"><a href=\"#\">"+oData[i].name+"</a><br>"+oData[i].category+"<br>"+oData[i].about+"<img state="+state+" src="+imgSrc+" onClick=\"handlePressOfFavIcon(this)\"></img></li>"
 		
 	}	
 	HTML = HTML+"<ul>";
 	document.getElementById("PageListDiv").innerHTML=HTML;
-	document.getElementsByClassName("favIcon").addEventListener("click",handlePressOfFavIcon());
 	document.getElementById("search").style.visibility="visible"
 	
 }
